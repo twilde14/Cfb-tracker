@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CFB Watch Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0F241A; --surface: #16301F; --surface-2: #1C3A26; --line: #2E4C39;
+    --cream: #F3EFE2; --sage: #9CB3A2; --sage-dim: #6E8577;
+    --gold: #E8A33D; --gold-bright: #F5C56B; --flag: #D9564C;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--cream);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:640px;margin:0 auto;padding:18px 14px 60px;}
+
+  header{padding:4px 2px 16px;border-bottom:1px solid var(--line);margin-bottom:14px;}
+  .kicker{font-size:12px;letter-spacing:.04em;color:var(--sage);margin:0 0 4px;}
+  h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:26px;letter-spacing:.01em;margin:0 0 6px;color:var(--cream);}
+  .sub{font-size:12.5px;color:var(--sage);line-height:1.5;margin:0;}
+  .freshness{font-size:11px;color:var(--sage-dim);margin-top:8px;}
+
+  .tab-switch{display:flex;gap:6px;margin:16px 0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:4px;}
+  .tab-btn{flex:1;text-align:center;padding:10px 8px;border-radius:7px;cursor:pointer;font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--sage);}
+  .tab-btn.active{background:var(--gold);color:#231204;}
+
+  .day-section{margin-bottom:20px;}
+  .day-head{display:flex;align-items:baseline;justify-content:space-between;padding:6px 2px;margin-bottom:8px;border-bottom:1px solid var(--line);}
+  .day-head h2{font-family:'Oswald',sans-serif;font-size:16px;margin:0;letter-spacing:.02em;}
+  .day-head .day-count{font-size:11.5px;color:var(--sage-dim);}
+
+  .filters{margin:6px 0 4px;}
+  .filters-label{font-size:11px;color:var(--sage-dim);margin-bottom:8px;}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{font-size:11px;padding:5px 9px;border-radius:100px;border:1px solid var(--line);cursor:pointer;display:flex;align-items:center;gap:5px;color:var(--sage);background:var(--surface);}
+  .chip .dot{width:7px;height:7px;border-radius:50%;flex:0 0 auto;}
+  .chip.off{opacity:.35;}
+
+  .game-row{display:flex;align-items:flex-start;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:10px 11px;margin-bottom:7px;cursor:pointer;}
+  .game-row.hidden{display:none;}
+  .game-row.picked{border-color:var(--gold);background:var(--surface-2);}
+  .checkbox{width:20px;height:20px;border-radius:5px;border:1.5px solid var(--sage-dim);flex:0 0 auto;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:13px;color:transparent;}
+  .game-row.picked .checkbox{background:var(--gold);border-color:var(--gold);color:#231204;}
+  .game-info{flex:1;min-width:0;}
+  .g-teams{font-size:14px;font-weight:600;line-height:1.35;}
+  .g-teams b{color:var(--gold-bright);}
+  .g-meta{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:5px;align-items:center;}
+  .g-time{font-size:12px;color:var(--sage);}
+  .net-badge{font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:.03em;padding:2px 7px;border-radius:100px;color:#0E1712;}
+  .g-note{font-size:11.5px;color:var(--sage-dim);margin-top:4px;font-style:italic;}
+  .spread-badge{display:flex;align-items:center;gap:6px;}
+  .closeness-dot{width:7px;height:7px;border-radius:50%;flex:0 0 auto;}
+  .closeness-label{font-size:11.5px;font-weight:600;}
+
+  .summary-bar{display:flex;justify-content:space-between;background:var(--surface-2);border:1px solid var(--line);border-radius:9px;padding:10px 12px;margin-bottom:16px;font-size:12.5px;color:var(--sage);}
+  .summary-bar b{color:var(--cream);font-family:'Oswald',sans-serif;}
+  .empty-state{text-align:center;padding:40px 20px;color:var(--sage-dim);font-size:13.5px;background:var(--surface);border:1px dashed var(--line);border-radius:10px;}
+
+  .sched-day{margin-bottom:26px;}
+  .sched-day-head{margin-bottom:8px;}
+  .sched-day-head h2{font-family:'Oswald',sans-serif;font-size:16px;margin:0 0 2px;letter-spacing:.02em;}
+  .sched-day-head .day-sub{font-size:11.5px;color:var(--sage-dim);}
+
+  .timeline{position:relative;display:grid;grid-template-columns:42px 1fr;gap:0;margin-bottom:12px;}
+  .tl-axis{position:relative;}
+  .tl-hour-label{position:absolute;left:0;right:6px;text-align:right;font-size:10px;color:var(--sage-dim);transform:translateY(-6px);}
+  .tl-tracks{position:relative;background:var(--surface);border-radius:10px;border:1px solid var(--line);overflow:hidden;}
+  .tl-hour-line{position:absolute;left:0;right:0;border-top:1px solid var(--line);}
+  .tl-game{position:absolute;border-radius:6px;padding:5px 6px;border:1px solid rgba(0,0,0,.25);overflow:hidden;}
+  .tl-game .tl-teams{font-size:10.5px;font-weight:700;line-height:1.2;color:#0E1712;}
+  .tl-game .tl-time{font-size:9px;color:#0E1712;opacity:.75;margin-top:1px;}
+  .tl-game.conflict{box-shadow:0 0 0 2px var(--flag);}
+
+  .sched-item{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin-bottom:8px;}
+  .sched-item.conflict{border-color:var(--flag);}
+  .sched-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+  .sched-teams{font-size:14px;font-weight:600;line-height:1.35;}
+  .sched-teams b{color:var(--gold-bright);}
+  .sched-remove{font-size:11px;color:var(--sage-dim);background:none;border:1px solid var(--line);border-radius:6px;padding:4px 8px;cursor:pointer;flex:0 0 auto;}
+  .sched-meta{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:7px;align-items:center;}
+  .sched-warn{font-size:11.5px;color:var(--flag);margin-top:6px;}
+
+  footer{margin-top:26px;font-size:11px;color:var(--sage-dim);line-height:1.6;border-top:1px solid var(--line);padding-top:14px;}
+  footer b{color:var(--sage);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">COLLEGE FOOTBALL</p>
+    <h1>Watch Planner</h1>
+    <p class="sub">Times shown in your device's local time zone. Rankings are current AP Top 25. Spreads are current lines — both move.</p>
+    <p class="freshness" id="freshness"></p>
+  </header>
+
+  <div class="tab-switch">
+    <div class="tab-btn active" id="tabAllBtn">All Games</div>
+    <div class="tab-btn" id="tabSchedBtn">My Schedule</div>
+  </div>
+
+  <div id="tabAll"></div>
+  <div id="tabSched" style="display:none;"></div>
+
+  <footer>
+    <b>How this works:</b> game data refreshes automatically once a day from ESPN's public schedule feed. Your picks are saved in this browser only — pick your own games on your own device.
+  </footer>
+</div>
+
+<script>
+const LOCAL_KEY = 'cfb-watchlist';
+let RAW = { games: [] };
+let selected = new Set();
+let hiddenNets = new Set();
+let activeTab = "all";
+
+// ---------- LOAD DATA ----------
+async function loadData(){
+  try{
+    const res = await fetch('./data.json', { cache: "no-store" });
+    RAW = await res.json();
+  }catch(e){
+    console.error("Failed to load data.json", e);
+    RAW = { games: [] };
+  }
+  loadSelections();
+  renderFreshness();
+  render();
+}
+
+function renderFreshness(){
+  const el = document.getElementById('freshness');
+  if(!RAW.generated_at || RAW.games.length===0){
+    el.textContent = "No schedule data yet — the daily update hasn't run. Trigger it manually from the Actions tab.";
+    return;
+  }
+  const d = new Date(RAW.generated_at);
+  el.textContent = `Schedule data last refreshed ${d.toLocaleString(undefined, { weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit' })}.`;
+}
+
+// ---------- STORAGE (per-browser, no account needed) ----------
+function loadSelections(){
+  try{
+    const raw = localStorage.getItem(LOCAL_KEY);
+    if(raw) selected = new Set(JSON.parse(raw));
+  }catch(e){ /* private browsing or storage blocked — picks just won't persist */ }
+}
+function saveSelections(){
+  try{ localStorage.setItem(LOCAL_KEY, JSON.stringify(Array.from(selected))); }
+  catch(e){ /* ignore */ }
+}
+
+// ---------- HELPERS ----------
+function teamsLabel(g){
+  const away = g.away_rank ? `#${g.away_rank} ${g.away}` : g.away;
+  const home = g.home_rank ? `#${g.home_rank} ${g.home}` : g.home;
+  const joiner = g.note && g.note.startsWith("Neutral") ? " vs " : " at ";
+  return { away, home, text: `${away}${joiner}${home}` };
+}
+function teamsHTML(g){
+  const { away, home, text } = teamsLabel(g);
+  let html = text;
+  if(g.away_rank) html = html.replace(away, `<b>${away}</b>`);
+  if(g.home_rank) html = html.replace(home, `<b>${home}</b>`);
+  return html;
+}
+function teamsPlain(g){ return teamsLabel(g).text; }
+
+function localDateKey(iso){
+  const d = new Date(iso);
+  return d.toLocaleDateString('en-CA'); // YYYY-MM-DD in local tz
+}
+function localDayHeading(iso){
+  const d = new Date(iso);
+  return d.toLocaleDateString(undefined, { weekday:'long', month:'short', day:'numeric' });
+}
+function fmtTime(iso){
+  const d = new Date(iso);
+  return d.toLocaleTimeString(undefined, { hour:'numeric', minute: d.getMinutes()===0 ? undefined : '2-digit' });
+}
+function fmtTimeShort(iso){
+  const d = new Date(iso);
+  let s = d.toLocaleTimeString(undefined, { hour:'numeric', minute:'2-digit' });
+  return s.replace(' ', '').replace('AM','a').replace('PM','p');
+}
+function gameEnd(g){
+  return new Date(new Date(g.start_utc).getTime() + 3.5*60*60*1000);
+}
+
+// Deterministic color from a network name so new/unknown channels still
+// get a stable, distinct color without needing to be hand-mapped.
+const KNOWN_COLORS = {
+  "ABC":"#5B8DEF","CBS":"#4FB0AE","FOX":"#E0793F","FS1":"#D98A4A","FS2":"#D98A4A",
+  "NBC":"#B187E0","Peacock":"#C48FE0","ESPN":"#E06A63","ESPN2":"#C9564F","ESPNU":"#E8967F",
+  "ESPN+":"#9AA0A6","ACC Network":"#6FBF8B","ACCN":"#6FBF8B","SEC Network":"#D4B24C","SECN":"#D4B24C",
+  "SEC Network+":"#B99A3D","Big Ten Network":"#7FB2E5","BTN":"#7FB2E5","TNT":"#4FB3D9","truTV":"#4FB3D9",
+  "CBS Sports Network":"#7FAE73","CBSSN":"#7FAE73","The CW":"#C77DBB","TBA":"#7A8C82"
+};
+function colorFor(network){
+  if(KNOWN_COLORS[network]) return KNOWN_COLORS[network];
+  let hash = 0;
+  for(let i=0;i<network.length;i++) hash = network.charCodeAt(i) + ((hash<<5)-hash);
+  const hue = Math.abs(hash) % 360;
+  return `hsl(${hue}, 45%, 62%)`;
+}
+
+function closenessInfo(spreadText){
+  if(!spreadText) return null;
+  const match = spreadText.match(/-?(\d+(\.\d+)?)/);
+  const margin = match ? parseFloat(match[1]) : null;
+  if(margin===null) return null;
+  if(margin<=3) return { label:"Toss-up", color:"#6FBF8B" };
+  if(margin<=10) return { label:"Should be competitive", color:"#D4B24C" };
+  if(margin<=20) return { label:"Could get one-sided", color:"#E0793F" };
+  return { label:"Likely blowout", color:"#D9564C" };
+}
+function spreadBadgeHTML(g){
+  if(!g.spread) return `<span class="g-time" style="opacity:.6">No line posted</span>`;
+  const info = closenessInfo(g.spread);
+  if(!info) return `<span class="g-time">${g.spread}</span>`;
+  return `<span class="spread-badge"><span class="g-time">${g.spread}</span><span class="closeness-dot" style="background:${info.color}"></span><span class="closeness-label" style="color:${info.color}">${info.label}</span></span>`;
+}
+function hasConflict(game){
+  const gEnd = gameEnd(game).getTime();
+  const gStart = new Date(game.start_utc).getTime();
+  for(const id of selected){
+    if(id===game.id) continue;
+    const other = RAW.games.find(x=>x.id===id);
+    if(!other) continue;
+    if(localDateKey(other.start_utc) !== localDateKey(game.start_utc)) continue;
+    const oStart = new Date(other.start_utc).getTime();
+    const oEnd = gameEnd(other).getTime();
+    if(oStart < gEnd && gStart < oEnd) return true;
+  }
+  return false;
+}
+
+function groupByDay(games){
+  const map = new Map();
+  games.forEach(g=>{
+    const key = localDateKey(g.start_utc);
+    if(!map.has(key)) map.set(key, []);
+    map.get(key).push(g);
+  });
+  return [...map.entries()].sort((a,b)=> a[0] < b[0] ? -1 : 1);
+}
+
+// ---------- TABS ----------
+document.getElementById('tabAllBtn').onclick = ()=>{ activeTab='all'; render(); };
+document.getElementById('tabSchedBtn').onclick = ()=>{ activeTab='sched'; render(); };
+
+// ---------- RENDER: ALL GAMES ----------
+function renderAllGames(){
+  const container = document.getElementById('tabAll');
+  container.innerHTML = "";
+
+  if(RAW.games.length===0){
+    container.innerHTML = `<div class="empty-state">No games loaded yet. Once the daily update runs (or you trigger it manually), games will show up here.</div>`;
+    return;
+  }
+
+  const allNets = [...new Set(RAW.games.map(g=>g.network))].sort();
+  const filterWrap = document.createElement('div');
+  filterWrap.className = 'filters';
+  filterWrap.innerHTML = `<p class="filters-label">SHOW CHANNELS</p>`;
+  const chipRow = document.createElement('div');
+  chipRow.className = 'chip-row';
+  allNets.forEach(net=>{
+    const chip = document.createElement('div');
+    chip.className = 'chip' + (hiddenNets.has(net) ? ' off':'');
+    chip.innerHTML = `<span class="dot" style="background:${colorFor(net)}"></span>${net}`;
+    chip.onclick = ()=>{ if(hiddenNets.has(net)) hiddenNets.delete(net); else hiddenNets.add(net); render(); };
+    chipRow.appendChild(chip);
+  });
+  filterWrap.appendChild(chipRow);
+  container.appendChild(filterWrap);
+
+  groupByDay(RAW.games).forEach(([dateKey, dayGames])=>{
+    dayGames.sort((a,b)=> new Date(a.start_utc)-new Date(b.start_utc));
+    const section = document.createElement('div');
+    section.className = 'day-section';
+    const visibleCount = dayGames.filter(g=>!hiddenNets.has(g.network)).length;
+    section.innerHTML = `<div class="day-head"><h2>${localDayHeading(dayGames[0].start_utc)}</h2><span class="day-count">${visibleCount} games</span></div>`;
+
+    dayGames.forEach(g=>{
+      const row = document.createElement('div');
+      row.className = 'game-row' + (hiddenNets.has(g.network) ? ' hidden':'') + (selected.has(g.id) ? ' picked':'');
+      row.innerHTML = `
+        <div class="checkbox">${selected.has(g.id) ? '✓' : ''}</div>
+        <div class="game-info">
+          <div class="g-teams">${teamsHTML(g)}</div>
+          <div class="g-meta">
+            <span class="g-time">${fmtTime(g.start_utc)}</span>
+            <span class="net-badge" style="background:${colorFor(g.network)}">${g.network}</span>
+          </div>
+          <div class="g-meta">${spreadBadgeHTML(g)}</div>
+          ${g.note ? `<div class="g-note">${g.note}</div>` : ``}
+        </div>
+      `;
+      row.onclick = ()=>{
+        if(selected.has(g.id)) selected.delete(g.id); else selected.add(g.id);
+        saveSelections();
+        render();
+      };
+      section.appendChild(row);
+    });
+    container.appendChild(section);
+  });
+}
+
+// ---------- RENDER: MY SCHEDULE (timeline) ----------
+function layoutDay(games){
+  const sorted = [...games].sort((a,b)=> new Date(a.start_utc)-new Date(b.start_utc));
+  let clusters = [], current = [], clusterEnd = -1;
+  sorted.forEach(g=>{
+    const s = new Date(g.start_utc).getTime(), e = gameEnd(g).getTime();
+    if(current.length===0 || s < clusterEnd){ current.push(g); clusterEnd = Math.max(clusterEnd, e); }
+    else { clusters.push(current); current=[g]; clusterEnd = e; }
+  });
+  if(current.length) clusters.push(current);
+
+  clusters.forEach(cluster=>{
+    const cols = [];
+    cluster.forEach(g=>{
+      const s = new Date(g.start_utc).getTime(), e = gameEnd(g).getTime();
+      let placed=false;
+      for(let c=0;c<cols.length;c++){ if(cols[c] <= s){ g.col=c; cols[c]=e; placed=true; break; } }
+      if(!placed){ g.col=cols.length; cols.push(e); }
+    });
+    cluster.forEach(g=> g.totalCols = cols.length);
+  });
+  return sorted;
+}
+
+function renderTimeline(picks){
+  const PX_PER_MIN = 1.15;
+  const starts = picks.map(g=>new Date(g.start_utc).getTime());
+  const ends = picks.map(g=>gameEnd(g).getTime());
+  const minStart = new Date(Math.min(...starts) - 30*60000);
+  const maxEnd = new Date(Math.max(...ends) + 15*60000);
+  const axisStart = new Date(minStart); axisStart.setMinutes(0,0,0);
+  const axisEnd = new Date(maxEnd); axisEnd.setMinutes(0,0,0); axisEnd.setHours(axisEnd.getHours()+1);
+  const totalMin = (axisEnd-axisStart)/60000;
+  const height = totalMin*PX_PER_MIN;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'timeline';
+  const axis = document.createElement('div');
+  axis.className = 'tl-axis'; axis.style.height = height+"px";
+  const tracks = document.createElement('div');
+  tracks.className = 'tl-tracks'; tracks.style.height = height+"px";
+
+  for(let m=0; m<=totalMin; m+=60){
+    const hourMark = new Date(axisStart.getTime() + m*60000);
+    const top = m*PX_PER_MIN;
+    const label = document.createElement('div');
+    label.className='tl-hour-label'; label.style.top = top+"px";
+    label.textContent = fmtTimeShort(hourMark.toISOString()).toUpperCase();
+    axis.appendChild(label);
+    const line = document.createElement('div');
+    line.className='tl-hour-line'; line.style.top = top+"px";
+    tracks.appendChild(line);
+  }
+
+  const laidOut = layoutDay(picks);
+  laidOut.forEach(g=>{
+    const s = new Date(g.start_utc);
+    const top = (s-axisStart)/60000*PX_PER_MIN;
+    const h = ((gameEnd(g)-s)/60000)*PX_PER_MIN - 3;
+    const widthPct = 100/g.totalCols;
+    const leftPct = g.col*widthPct;
+    const conflict = hasConflict(g);
+
+    const div = document.createElement('div');
+    div.className = 'tl-game' + (conflict ? ' conflict':'');
+    div.style.top = top+"px"; div.style.height = h+"px";
+    div.style.left = `calc(${leftPct}% + 2px)`; div.style.width = `calc(${widthPct}% - 4px)`;
+    div.style.background = colorFor(g.network);
+    div.innerHTML = `<div class="tl-teams">${teamsPlain(g)}</div><div class="tl-time">${fmtTimeShort(g.start_utc)}–${fmtTimeShort(gameEnd(g).toISOString())}</div>`;
+    tracks.appendChild(div);
+  });
+
+  wrap.appendChild(axis); wrap.appendChild(tracks);
+  return wrap;
+}
+
+function renderSchedule(){
+  const container = document.getElementById('tabSched');
+  container.innerHTML = "";
+
+  const pickedGames = RAW.games.filter(g=>selected.has(g.id));
+  const totalConflicts = pickedGames.filter(g=>hasConflict(g)).length;
+  const summary = document.createElement('div');
+  summary.className = 'summary-bar';
+  summary.innerHTML = `<span><b>${pickedGames.length}</b> games picked</span><span>${totalConflicts>0 ? `<b>${totalConflicts}</b> overlap${totalConflicts>1?'s':''}` : 'No overlaps'}</span>`;
+  container.appendChild(summary);
+
+  if(pickedGames.length===0){
+    const empty = document.createElement('div');
+    empty.className='empty-state';
+    empty.textContent = "No games picked yet — switch to All Games and tap the ones you want to watch.";
+    container.appendChild(empty);
+    return;
+  }
+
+  groupByDay(pickedGames).forEach(([dateKey, picks])=>{
+    picks.sort((a,b)=> new Date(a.start_utc)-new Date(b.start_utc));
+    const daySection = document.createElement('div');
+    daySection.className = 'sched-day';
+    daySection.innerHTML = `<div class="sched-day-head"><h2>${localDayHeading(picks[0].start_utc)}</h2><div class="day-sub">${picks.length} game${picks.length>1?'s':''} · first kickoff ${fmtTime(picks[0].start_utc)}, last final around ${fmtTime(gameEnd(picks[picks.length-1]).toISOString())}</div></div>`;
+    daySection.appendChild(renderTimeline(picks));
+
+    picks.forEach(g=>{
+      const conflict = hasConflict(g);
+      const item = document.createElement('div');
+      item.className = 'sched-item' + (conflict ? ' conflict':'');
+      item.innerHTML = `
+        <div class="sched-top">
+          <div class="sched-teams">${teamsHTML(g)}</div>
+          <button class="sched-remove">Remove</button>
+        </div>
+        <div class="sched-meta">
+          <span class="g-time">${fmtTime(g.start_utc)} – ${fmtTime(gameEnd(g).toISOString())}</span>
+          <span class="net-badge" style="background:${colorFor(g.network)}">${g.network}</span>
+        </div>
+        <div class="sched-meta">${spreadBadgeHTML(g)}</div>
+        ${g.note ? `<div class="g-note">${g.note}</div>` : ``}
+        ${conflict ? `<div class="sched-warn">⚠ Overlaps another pick this day — you'll be splitting attention or flipping channels.</div>` : ``}
+      `;
+      item.querySelector('.sched-remove').onclick = (e)=>{ e.stopPropagation(); selected.delete(g.id); saveSelections(); render(); };
+      daySection.appendChild(item);
+    });
+    container.appendChild(daySection);
+  });
+}
+
+function render(){
+  document.getElementById('tabAllBtn').className = 'tab-btn' + (activeTab==='all' ? ' active':'');
+  document.getElementById('tabSchedBtn').className = 'tab-btn' + (activeTab==='sched' ? ' active':'');
+  document.getElementById('tabAll').style.display = activeTab==='all' ? 'block':'none';
+  document.getElementById('tabSched').style.display = activeTab==='sched' ? 'block':'none';
+  document.getElementById('tabSchedBtn').textContent = `My Schedule${selected.size ? ' ('+selected.size+')' : ''}`;
+  renderAllGames();
+  renderSchedule();
+}
+
+loadData();
+</script>
+</body>
+</html>
