@@ -1,19 +1,8 @@
 {
-  "generated_at": "2026-09-10T16:50:58+00:00Z",
-  "range_start": "2026-09-10",
-  "range_end": "2026-09-16",
+  "generated_at": "2026-09-11T16:50:56+00:00Z",
+  "range_start": "2026-09-11",
+  "range_end": "2026-09-17",
   "games": [
-    {
-      "id": "401858213",
-      "start_utc": "2026-09-11T00:00Z",
-      "away": "Florida A&M",
-      "home": "Miami",
-      "away_rank": null,
-      "home_rank": 7,
-      "network": "ACC Network",
-      "spread": "MIA -59.5",
-      "note": null
-    },
     {
       "id": "401858215",
       "start_utc": "2026-09-11T23:00Z",
@@ -22,7 +11,7 @@
       "away_rank": null,
       "home_rank": 24,
       "network": "ACC Network",
-      "spread": "LOU -36.5",
+      "spread": "LOU -37.5",
       "note": null
     },
     {
@@ -33,7 +22,7 @@
       "away_rank": null,
       "home_rank": 25,
       "network": "ACCNX",
-      "spread": "UVA -44.5",
+      "spread": "UVA -46.5",
       "note": null
     },
     {
@@ -44,7 +33,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "NCSU -32.5",
+      "spread": "NCSU -33.5",
       "note": null
     },
     {
@@ -55,7 +44,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN2",
-      "spread": "BC -3.5",
+      "spread": "BC -3",
       "note": null
     },
     {
@@ -66,7 +55,7 @@
       "away_rank": 23,
       "home_rank": null,
       "network": "FOX",
-      "spread": "MIZ -5.5",
+      "spread": "MIZ -4.5",
       "note": null
     },
     {
@@ -143,7 +132,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ACC Network",
-      "spread": "UNC -34.5",
+      "spread": "UNC -35.5",
       "note": null
     },
     {
@@ -154,7 +143,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CW",
-      "spread": "VT -19.5",
+      "spread": "VT -18.5",
       "note": null
     },
     {
@@ -187,7 +176,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "ECU -7",
+      "spread": "ECU -6.5",
       "note": null
     },
     {
@@ -202,6 +191,17 @@
       "note": null
     },
     {
+      "id": "401868187",
+      "start_utc": "2026-09-12T16:00Z",
+      "away": "Gardner-Webb",
+      "home": "Liberty",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "ESPN+",
+      "spread": "LIB -27.5",
+      "note": null
+    },
+    {
       "id": "401866628",
       "start_utc": "2026-09-12T16:00Z",
       "away": "Elon",
@@ -209,7 +209,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FloSports",
-      "spread": null,
+      "spread": "URI -8.5",
       "note": null
     },
     {
@@ -220,7 +220,18 @@
       "away_rank": null,
       "home_rank": null,
       "network": "NEC Front Row",
-      "spread": null,
+      "spread": "UALB -5.5",
+      "note": null
+    },
+    {
+      "id": "401866633",
+      "start_utc": "2026-09-12T16:00Z",
+      "away": "NC A&T",
+      "home": "NC Central",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "ESPN+",
+      "spread": "NCCU -24.5",
       "note": null
     },
     {
@@ -253,7 +264,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "LAF -12.5",
       "note": null
     },
     {
@@ -264,7 +275,7 @@
       "away_rank": null,
       "home_rank": 2,
       "network": "SEC Network",
-      "spread": "UGA -40.5",
+      "spread": "UGA -39.5",
       "note": null
     },
     {
@@ -286,7 +297,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "CMU -23.5",
+      "spread": "CMU -24.5",
       "note": null
     },
     {
@@ -319,7 +330,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "BUCK -10.5",
       "note": null
     },
     {
@@ -330,7 +341,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "BALL -14.5",
+      "spread": "BALL -15.5",
       "note": null
     },
     {
@@ -341,7 +352,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "SDAK -16.5",
       "note": null
     },
     {
@@ -352,7 +363,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "YSU -22.5",
       "note": null
     },
     {
@@ -363,7 +374,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "LEH -11.5",
       "note": null
     },
     {
@@ -374,7 +385,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "UNI -10.5",
       "note": null
     },
     {
@@ -407,7 +418,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "MONT -38.5",
       "note": null
     },
     {
@@ -429,7 +440,7 @@
       "away_rank": 12,
       "home_rank": null,
       "network": "ABC/Disney+",
-      "spread": "ALA -10.5",
+      "spread": "ALA -10",
       "note": null
     },
     {
@@ -451,7 +462,7 @@
       "away_rank": null,
       "home_rank": 19,
       "network": "BTN",
-      "spread": "WASH -26.5",
+      "spread": "WASH -27.5",
       "note": null
     },
     {
@@ -462,7 +473,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBS",
-      "spread": "MINN -1.5",
+      "spread": "MSST -1.5",
       "note": null
     },
     {
@@ -506,7 +517,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FS1",
-      "spread": "ILL -6",
+      "spread": "ILL -5.5",
       "note": null
     },
     {
@@ -528,7 +539,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "MD -13.5",
+      "spread": "MD -11.5",
       "note": null
     },
     {
@@ -572,7 +583,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "TOL -33.5",
+      "spread": "TOL -35.5",
       "note": null
     },
     {
@@ -638,7 +649,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "MW+",
-      "spread": "UNM -40.5",
+      "spread": "UNM -41.5",
       "note": null
     },
     {
@@ -660,7 +671,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "IDHO -1.5",
       "note": null
     },
     {
@@ -671,7 +682,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "SWAC TV",
-      "spread": null,
+      "spread": "BCU -14.5",
       "note": null
     },
     {
@@ -704,7 +715,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FloSports",
-      "spread": null,
+      "spread": "ME -10",
       "note": null
     },
     {
@@ -715,7 +726,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "APSU -34.5",
       "note": null
     },
     {
@@ -726,7 +737,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "NAU -4.5",
       "note": null
     },
     {
@@ -759,7 +770,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "FIU -10.5",
+      "spread": "FIU -10",
       "note": null
     },
     {
@@ -774,17 +785,6 @@
       "note": null
     },
     {
-      "id": "401868187",
-      "start_utc": "2026-09-12T22:00Z",
-      "away": "Gardner-Webb",
-      "home": "Liberty",
-      "away_rank": null,
-      "home_rank": null,
-      "network": "ESPN+",
-      "spread": "LIB -26.5",
-      "note": null
-    },
-    {
       "id": "401866629",
       "start_utc": "2026-09-12T22:00Z",
       "away": "Bryant",
@@ -792,7 +792,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FloSports",
-      "spread": null,
+      "spread": "BRY -3.5",
       "note": null
     },
     {
@@ -803,18 +803,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FloSports",
-      "spread": null,
-      "note": null
-    },
-    {
-      "id": "401866633",
-      "start_utc": "2026-09-12T22:00Z",
-      "away": "NC A&T",
-      "home": "NC Central",
-      "away_rank": null,
-      "home_rank": null,
-      "network": "ESPN+",
-      "spread": null,
+      "spread": "UNH -13.5",
       "note": null
     },
     {
@@ -847,7 +836,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "IDST -25.5",
       "note": null
     },
     {
@@ -858,7 +847,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "UTC -3",
       "note": null
     },
     {
@@ -869,7 +858,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "CIT -1.5",
       "note": null
     },
     {
@@ -891,7 +880,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "MER -15.5",
       "note": null
     },
     {
@@ -913,7 +902,7 @@
       "away_rank": 18,
       "home_rank": null,
       "network": "ESPN",
-      "spread": "TENN -12.5",
+      "spread": "TENN -11.5",
       "note": null
     },
     {
@@ -1012,7 +1001,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "ARST -31.5",
       "note": null
     },
     {
@@ -1056,7 +1045,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "INST -1.5",
       "note": null
     },
     {
@@ -1067,7 +1056,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "MUR -10.5",
       "note": null
     },
     {
@@ -1078,7 +1067,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "SIU -7.5",
       "note": null
     },
     {
@@ -1100,7 +1089,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "SELA -6.5",
       "note": null
     },
     {
@@ -1111,7 +1100,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "SWAC TV",
-      "spread": null,
+      "spread": "TNST -1.5",
       "note": null
     },
     {
@@ -1122,7 +1111,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "TAR -20.5",
       "note": null
     },
     {
@@ -1133,7 +1122,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "RGV -5.5",
       "note": null
     },
     {
@@ -1144,7 +1133,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "TBA",
-      "spread": null,
+      "spread": "ALCN -8.5",
       "note": "Neutral site \u2014 Simmons Bank Liberty Stadium"
     },
     {
@@ -1155,7 +1144,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "TNTC -26.5",
       "note": null
     },
     {
@@ -1166,7 +1155,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "ETAM -20.5",
       "note": null
     },
     {
@@ -1188,7 +1177,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "SDST -44.5",
       "note": null
     },
     {
@@ -1265,7 +1254,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ACC Network",
-      "spread": "CLEM -20.5",
+      "spread": "CLEM -19.5",
       "note": null
     },
     {
@@ -1287,7 +1276,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "CCU -33.5",
+      "spread": "CCU -34.5",
       "note": null
     },
     {
@@ -1298,7 +1287,7 @@
       "away_rank": null,
       "home_rank": 9,
       "network": "ESPN2",
-      "spread": "MISS -47.5",
+      "spread": "MISS -45.5",
       "note": null
     },
     {
@@ -1331,7 +1320,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "SFA -3",
       "note": null
     },
     {
@@ -1342,7 +1331,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "BAY -38.5",
+      "spread": "BAY -37.5",
       "note": null
     },
     {
@@ -1375,7 +1364,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FS1",
-      "spread": "NDSU -2.5",
+      "spread": "NDSU -1.5",
       "note": null
     },
     {
@@ -1386,7 +1375,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "UND -25.5",
       "note": null
     },
     {
@@ -1430,7 +1419,7 @@
       "away_rank": null,
       "home_rank": 14,
       "network": "BTN",
-      "spread": "USC -30.5",
+      "spread": "USC -31.5",
       "note": null
     },
     {
@@ -1442,6 +1431,17 @@
       "home_rank": null,
       "network": "MW+",
       "spread": "HAW -7",
+      "note": null
+    },
+    {
+      "id": "401858225",
+      "start_utc": "2026-09-17T23:30Z",
+      "away": "Syracuse",
+      "home": "Pitt",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "ESPN",
+      "spread": "PITT -10.5",
       "note": null
     }
   ]
