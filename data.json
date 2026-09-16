@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-15T17:26:12+00:00Z",
-  "range_start": "2026-09-15",
-  "range_end": "2026-09-21",
+  "generated_at": "2026-09-16T17:25:30+00:00Z",
+  "range_start": "2026-09-16",
+  "range_end": "2026-09-22",
   "games": [
     {
       "id": "401858225",
@@ -88,7 +88,7 @@
       "away_rank": null,
       "home_rank": 14,
       "network": "BTN",
-      "spread": "PSU -40.5",
+      "spread": "PSU -41.5",
       "note": null
     },
     {
@@ -231,7 +231,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "Peacock",
-      "spread": "WIS -24.5",
+      "spread": "WIS -23.5",
       "note": null
     },
     {
@@ -352,7 +352,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "Peacock",
-      "spread": "ILL -41.5",
+      "spread": "ILL -38.5",
       "note": null
     },
     {
@@ -407,7 +407,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "TOL -5.5",
+      "spread": "TOL -6",
       "note": null
     },
     {
@@ -686,17 +686,6 @@
       "note": null
     },
     {
-      "id": "401868935",
-      "start_utc": "2026-09-19T21:00Z",
-      "away": "Central St",
-      "home": "AR-Pine Bluff",
-      "away_rank": null,
-      "home_rank": null,
-      "network": "SWAC TV",
-      "spread": null,
-      "note": null
-    },
-    {
       "id": "401862710",
       "start_utc": "2026-09-19T22:00Z",
       "away": "East Carolina",
@@ -818,6 +807,17 @@
       "note": null
     },
     {
+      "id": "401868935",
+      "start_utc": "2026-09-19T22:00Z",
+      "away": "Central St",
+      "home": "AR-Pine Bluff",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "SWAC TV",
+      "spread": null,
+      "note": null
+    },
+    {
       "id": "401871047",
       "start_utc": "2026-09-19T22:30Z",
       "away": "Marshall",
@@ -825,7 +825,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "MRSH -3.5",
+      "spread": "MRSH -4.5",
       "note": null
     },
     {
@@ -858,7 +858,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "UCF -18.5",
+      "spread": "UCF -17.5",
       "note": null
     },
     {
@@ -935,7 +935,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "USA -5.5",
+      "spread": "USA -7",
       "note": null
     },
     {
@@ -1177,7 +1177,7 @@
       "away_rank": null,
       "home_rank": 25,
       "network": "ACC Network",
-      "spread": "UVA -10",
+      "spread": "UVA -10.5",
       "note": "Neutral site \u2014 Bank of America Stadium"
     },
     {
@@ -1232,7 +1232,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "TCU -19.5",
+      "spread": "TCU -20.5",
       "note": null
     },
     {
@@ -1243,7 +1243,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": null,
+      "spread": "TLSA -42.5",
       "note": null
     },
     {
@@ -1342,7 +1342,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CW",
-      "spread": "SDSU -2.5",
+      "spread": "SDSU -1.5",
       "note": null
     },
     {
