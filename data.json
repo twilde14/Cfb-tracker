@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-16T17:25:30+00:00Z",
-  "range_start": "2026-09-16",
-  "range_end": "2026-09-22",
+  "generated_at": "2026-09-17T17:25:04+00:00Z",
+  "range_start": "2026-09-17",
+  "range_end": "2026-09-23",
   "games": [
     {
       "id": "401858225",
@@ -22,7 +22,7 @@
       "away_rank": 5,
       "home_rank": null,
       "network": "ESPN",
-      "spread": "MIA -20.5",
+      "spread": "MIA -21",
       "note": null
     },
     {
@@ -143,7 +143,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN/Disney+",
-      "spread": "CLEM -3.5",
+      "spread": "CLEM -3",
       "note": null
     },
     {
@@ -242,7 +242,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "SEC Network",
-      "spread": "VAN -3.5",
+      "spread": "VAN -3",
       "note": null
     },
     {
@@ -253,7 +253,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "CMU -1.5",
+      "spread": "WYO -1.5",
       "note": null
     },
     {
@@ -451,7 +451,7 @@
       "away_rank": null,
       "home_rank": 9,
       "network": "ESPN",
-      "spread": "TA&M -16.5",
+      "spread": "TA&M -17.5",
       "note": null
     },
     {
@@ -473,7 +473,7 @@
       "away_rank": 12,
       "home_rank": null,
       "network": "CBS",
-      "spread": "USC -23.5",
+      "spread": "USC -21.5",
       "note": null
     },
     {
@@ -495,7 +495,7 @@
       "away_rank": null,
       "home_rank": 17,
       "network": "FOX",
-      "spread": "UTAH -28.5",
+      "spread": "UTAH -27.5",
       "note": null
     },
     {
@@ -506,7 +506,7 @@
       "away_rank": null,
       "home_rank": 19,
       "network": "BTN",
-      "spread": "MICH -35.5",
+      "spread": "MICH -34.5",
       "note": null
     },
     {
@@ -517,7 +517,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "CIN -14.5",
+      "spread": "CIN -16.5",
       "note": null
     },
     {
@@ -605,7 +605,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CW",
-      "spread": "DUKE -9.5",
+      "spread": "DUKE -10",
       "note": null
     },
     {
@@ -616,7 +616,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "LIB -14.5",
+      "spread": "LIB -14",
       "note": null
     },
     {
@@ -627,7 +627,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "BAY -19.5",
+      "spread": "BAY -17.5",
       "note": null
     },
     {
@@ -704,7 +704,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "FAU -7",
+      "spread": "FAU -6.5",
       "note": null
     },
     {
@@ -825,7 +825,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "MRSH -4.5",
+      "spread": "MRSH -4",
       "note": null
     },
     {
@@ -836,7 +836,7 @@
       "away_rank": null,
       "home_rank": 20,
       "network": "SECN+",
-      "spread": "MIZ -26.5",
+      "spread": "MIZ -27.5",
       "note": null
     },
     {
@@ -946,7 +946,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "JXST -3",
+      "spread": "JXST -3.5",
       "note": null
     },
     {
@@ -1144,7 +1144,7 @@
       "away_rank": 7,
       "home_rank": 8,
       "network": "ABC",
-      "spread": "LSU -3",
+      "spread": "LSU -2.5",
       "note": null
     },
     {
@@ -1166,7 +1166,7 @@
       "away_rank": null,
       "home_rank": 24,
       "network": "ESPN2",
-      "spread": "OU -22.5",
+      "spread": "OU -21.5",
       "note": null
     },
     {
@@ -1232,7 +1232,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "TCU -20.5",
+      "spread": "TCU -19.5",
       "note": null
     },
     {
@@ -1364,7 +1364,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "TNT",
-      "spread": "ARIZ -34.5",
+      "spread": "ARIZ -33.5",
       "note": null
     },
     {
