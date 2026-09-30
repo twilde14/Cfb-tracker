@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T18:25:23+00:00Z",
-  "range_start": "2026-09-29",
-  "range_end": "2026-10-05",
+  "generated_at": "2026-09-30T18:14:23+00:00Z",
+  "range_start": "2026-09-30",
+  "range_end": "2026-10-06",
   "games": [
     {
       "id": "401871049",
@@ -33,7 +33,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN",
-      "spread": "VT -3.5",
+      "spread": "VT -3",
       "note": null
     },
     {
@@ -55,7 +55,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FOX",
-      "spread": "PSU -3",
+      "spread": "PSU -2.5",
       "note": null
     },
     {
@@ -99,7 +99,7 @@
       "away_rank": null,
       "home_rank": 20,
       "network": "ESPN2",
-      "spread": "HOU -12.5",
+      "spread": "HOU -11.5",
       "note": null
     },
     {
@@ -132,7 +132,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "TNT",
-      "spread": "ISU -3",
+      "spread": "ISU -3.5",
       "note": null
     },
     {
@@ -550,7 +550,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ACC Network",
-      "spread": "LOU -4",
+      "spread": "LOU -3.5",
       "note": null
     },
     {
@@ -649,7 +649,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "GAST -1.5",
+      "spread": "GAST -2.5",
       "note": null
     },
     {
@@ -781,7 +781,7 @@
       "away_rank": 24,
       "home_rank": null,
       "network": "SEC Network",
-      "spread": "SC -2.5",
+      "spread": "SC -3",
       "note": null
     },
     {
@@ -1067,7 +1067,7 @@
       "away_rank": 12,
       "home_rank": null,
       "network": "FOX",
-      "spread": "TTU -13.5",
+      "spread": "TTU -12.5",
       "note": null
     },
     {
@@ -1100,7 +1100,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "USF -6",
+      "spread": "USF -6.5",
       "note": null
     },
     {
@@ -1255,6 +1255,17 @@
       "home_rank": null,
       "network": "MW+",
       "spread": "HAW -3",
+      "note": null
+    },
+    {
+      "id": "401871090",
+      "start_utc": "2026-10-07T00:00Z",
+      "away": "Southern Miss",
+      "home": "Troy",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "ESPN2",
+      "spread": null,
       "note": null
     }
   ]
