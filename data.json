@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-12T21:30:44+00:00Z",
-  "range_start": "2026-10-12",
-  "range_end": "2026-10-18",
+  "generated_at": "2026-10-13T19:42:14+00:00Z",
+  "range_start": "2026-10-13",
+  "range_end": "2026-10-19",
   "games": [
     {
       "id": "401871067",
@@ -66,7 +66,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN2",
-      "spread": "GASO -4",
+      "spread": "GASO -3.5",
       "note": null
     },
     {
@@ -153,8 +153,8 @@
       "home": "LSU",
       "away_rank": 16,
       "home_rank": 22,
-      "network": "ESPN",
-      "spread": "LSU -12.5",
+      "network": "ESPN/Disney+",
+      "spread": "LSU -14",
       "note": null
     },
     {
@@ -341,7 +341,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "BTN",
-      "spread": "MD -6",
+      "spread": "MD -4.5",
       "note": null
     },
     {
@@ -484,7 +484,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "WMU -7",
+      "spread": "WMU -6.5",
       "note": null
     },
     {
@@ -549,7 +549,7 @@
       "home": "Stony Brook",
       "away_rank": null,
       "home_rank": null,
-      "network": "FloSports",
+      "network": "SNY/FloSports",
       "spread": null,
       "note": null
     },
@@ -781,7 +781,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "AF -1.5",
+      "spread": "UNLV -1.5",
       "note": null
     },
     {
@@ -917,17 +917,6 @@
       "note": null
     },
     {
-      "id": "401868319",
-      "start_utc": "2026-10-17T21:00Z",
-      "away": "Lamar",
-      "home": "SE Louisiana",
-      "away_rank": null,
-      "home_rank": null,
-      "network": "ESPN+",
-      "spread": null,
-      "note": null
-    },
-    {
       "id": "401874037",
       "start_utc": "2026-10-17T21:00Z",
       "away": "West Alabama",
@@ -978,7 +967,7 @@
       "home": "Miami",
       "away_rank": null,
       "home_rank": 3,
-      "network": "ESPN",
+      "network": "ESPN/Disney+",
       "spread": "MIA -21",
       "note": null
     },
@@ -1001,7 +990,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FS1",
-      "spread": "BAY -5.5",
+      "spread": "BAY -6",
       "note": null
     },
     {
@@ -1093,6 +1082,17 @@
       "note": null
     },
     {
+      "id": "401868319",
+      "start_utc": "2026-10-17T23:00Z",
+      "away": "Lamar",
+      "home": "SE Louisiana",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "ESPN+",
+      "spread": null,
+      "note": null
+    },
+    {
       "id": "401868383",
       "start_utc": "2026-10-17T23:00Z",
       "away": "Mercer",
@@ -1144,7 +1144,7 @@
       "away_rank": 15,
       "home_rank": null,
       "network": "SEC Network",
-      "spread": "OU -6.5",
+      "spread": "OU -7",
       "note": null
     },
     {
@@ -1243,7 +1243,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "OHIO -14",
+      "spread": "OHIO -15.5",
       "note": null
     },
     {
@@ -1287,7 +1287,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FS1",
-      "spread": "UNM -14",
+      "spread": "UNM -14.5",
       "note": null
     },
     {
