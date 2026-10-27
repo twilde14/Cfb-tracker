@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T18:59:10+00:00Z",
-  "range_start": "2026-10-26",
-  "range_end": "2026-11-01",
+  "generated_at": "2026-10-27T18:30:27+00:00Z",
+  "range_start": "2026-10-27",
+  "range_end": "2026-11-02",
   "games": [
     {
       "id": "401871071",
@@ -22,7 +22,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN2",
-      "spread": "MOST -5.5",
+      "spread": "MOST -6",
       "note": null
     },
     {
@@ -33,7 +33,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "MTSU -3",
+      "spread": "MTSU -2.5",
       "note": null
     },
     {
@@ -143,7 +143,7 @@
       "away_rank": 22,
       "home_rank": 13,
       "network": "ESPN",
-      "spread": "TTU -3",
+      "spread": "TTU -3.5",
       "note": null
     },
     {
@@ -154,7 +154,7 @@
       "away_rank": 19,
       "home_rank": null,
       "network": "ESPN2",
-      "spread": "SMU -9.5",
+      "spread": "SMU -10",
       "note": null
     },
     {
@@ -209,7 +209,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "USF -7.5",
+      "spread": "USF -8.5",
       "note": null
     },
     {
@@ -825,7 +825,7 @@
       "away_rank": null,
       "home_rank": 4,
       "network": "CBS",
-      "spread": "IU -19.5",
+      "spread": "IU -20.5",
       "note": null
     },
     {
@@ -946,7 +946,7 @@
       "away_rank": null,
       "home_rank": 14,
       "network": "ESPN2",
-      "spread": "WAKE -14",
+      "spread": "WAKE -12.5",
       "note": null
     },
     {
@@ -1155,7 +1155,7 @@
       "away_rank": 2,
       "home_rank": null,
       "network": "NBC",
-      "spread": "OSU -7",
+      "spread": "OSU -6.5",
       "note": null
     },
     {
@@ -1166,7 +1166,7 @@
       "away_rank": null,
       "home_rank": 11,
       "network": "ESPN",
-      "spread": "TEX -21",
+      "spread": "TEX -20.5",
       "note": null
     },
     {
@@ -1199,7 +1199,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "BTN",
-      "spread": "NEB -8.5",
+      "spread": "NEB -7.5",
       "note": null
     },
     {
@@ -1254,7 +1254,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "UNLV -24.5",
+      "spread": "UNLV -23.5",
       "note": null
     },
     {
