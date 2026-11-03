@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T22:04:18+00:00Z",
-  "range_start": "2026-11-02",
-  "range_end": "2026-11-08",
+  "generated_at": "2026-11-03T19:55:44+00:00Z",
+  "range_start": "2026-11-03",
+  "range_end": "2026-11-09",
   "games": [
     {
       "id": "401866453",
@@ -11,7 +11,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN2",
-      "spread": "OHIO -14",
+      "spread": "OHIO -13.5",
       "note": null
     },
     {
@@ -22,7 +22,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN",
-      "spread": "M-OH -6.5",
+      "spread": "M-OH -6",
       "note": null
     },
     {
@@ -143,7 +143,7 @@
       "away_rank": null,
       "home_rank": 24,
       "network": "ESPN",
-      "spread": "ARIZ -8.5",
+      "spread": "ARIZ -9.5",
       "note": null
     },
     {
@@ -186,7 +186,7 @@
       "home": "Baylor",
       "away_rank": null,
       "home_rank": null,
-      "network": "TBA",
+      "network": "FS1",
       "spread": "BAY -10",
       "note": null
     },
@@ -209,7 +209,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ACC Network",
-      "spread": "FSU -7",
+      "spread": "FSU -6.5",
       "note": null
     },
     {
@@ -406,8 +406,8 @@
       "home": "Kansas St",
       "away_rank": null,
       "home_rank": null,
-      "network": "TNT/HBO Max",
-      "spread": "OKST -4",
+      "network": "TNT",
+      "spread": "OKST -4.5",
       "note": null
     },
     {
@@ -538,7 +538,7 @@
       "home": "Butler",
       "away_rank": null,
       "home_rank": null,
-      "network": "ESPN+",
+      "network": "TBA",
       "spread": null,
       "note": null
     },
@@ -715,7 +715,7 @@
       "away_rank": null,
       "home_rank": 23,
       "network": "ESPN",
-      "spread": "SC -7.5",
+      "spread": "SC -7",
       "note": null
     },
     {
@@ -737,7 +737,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "DEL -2.5",
+      "spread": "DEL -1.5",
       "note": null
     },
     {
@@ -858,7 +858,7 @@
       "away_rank": null,
       "home_rank": 11,
       "network": "CBS",
-      "spread": "OSU -7",
+      "spread": "OSU -7.5",
       "note": null
     },
     {
@@ -902,7 +902,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "UAB -10",
+      "spread": "UAB -8.5",
       "note": null
     },
     {
@@ -924,7 +924,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
-      "spread": "GASO -10",
+      "spread": "GASO -10.5",
       "note": null
     },
     {
@@ -1005,6 +1005,17 @@
       "note": null
     },
     {
+      "id": "401868068",
+      "start_utc": "2026-11-07T21:00Z",
+      "away": "E Kentucky",
+      "home": "Austin Peay",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "ESPN+",
+      "spread": null,
+      "note": null
+    },
+    {
       "id": "401868313",
       "start_utc": "2026-11-07T21:00Z",
       "away": "SF Austin",
@@ -1020,17 +1031,6 @@
       "start_utc": "2026-11-07T21:00Z",
       "away": "East Texas A&M",
       "home": "Nicholls",
-      "away_rank": null,
-      "home_rank": null,
-      "network": "ESPN+",
-      "spread": null,
-      "note": null
-    },
-    {
-      "id": "401868068",
-      "start_utc": "2026-11-07T21:00Z",
-      "away": "E Kentucky",
-      "home": "Austin Peay",
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN+",
@@ -1221,7 +1221,7 @@
       "away_rank": 1,
       "home_rank": 4,
       "network": "NBC",
-      "spread": "ND -5.5",
+      "spread": "ND -6",
       "note": null
     },
     {
@@ -1287,7 +1287,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBS",
-      "spread": "ARMY -3.5",
+      "spread": "ARMY -3",
       "note": null
     },
     {
@@ -1320,7 +1320,7 @@
       "away_rank": null,
       "home_rank": 13,
       "network": "ESPN",
-      "spread": "TTU -16.5",
+      "spread": "TTU -17.5",
       "note": null
     },
     {
