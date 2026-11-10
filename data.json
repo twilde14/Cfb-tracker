@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T22:50:04+00:00Z",
-  "range_start": "2026-11-09",
-  "range_end": "2026-11-15",
+  "generated_at": "2026-11-10T20:09:55+00:00Z",
+  "range_start": "2026-11-10",
+  "range_end": "2026-11-16",
   "games": [
     {
       "id": "401866458",
@@ -11,7 +11,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "WMU -14",
+      "spread": "WMU -15.5",
       "note": null
     },
     {
@@ -22,7 +22,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "BGSU -5.5",
+      "spread": "BGSU -4.5",
       "note": null
     },
     {
@@ -77,7 +77,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN",
-      "spread": "MEM -4",
+      "spread": "MEM -3.5",
       "note": null
     },
     {
@@ -88,7 +88,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN2",
-      "spread": "UL -11.5",
+      "spread": "UL -10.5",
       "note": null
     },
     {
@@ -132,7 +132,7 @@
       "away_rank": 17,
       "home_rank": null,
       "network": "ESPN",
-      "spread": "HOU -10.5",
+      "spread": "HOU -10",
       "note": null
     },
     {
@@ -164,7 +164,7 @@
       "home": "SMU",
       "away_rank": 16,
       "home_rank": null,
-      "network": "ESPN",
+      "network": "ESPN/Disney+",
       "spread": "WAKE -1.5",
       "note": null
     },
@@ -198,7 +198,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ACC Network",
-      "spread": "SYR -2.5",
+      "spread": "SYR -3",
       "note": null
     },
     {
@@ -263,7 +263,7 @@
       "home": "Monmouth",
       "away_rank": null,
       "home_rank": null,
-      "network": "FloSports",
+      "network": "NBC Sports Phil/FloSports",
       "spread": null,
       "note": null
     },
@@ -451,7 +451,7 @@
       "away_rank": 5,
       "home_rank": null,
       "network": "SEC Network",
-      "spread": "ALA -16.5",
+      "spread": "ALA -15.5",
       "note": null
     },
     {
@@ -835,7 +835,7 @@
       "home": "Missouri St",
       "away_rank": null,
       "home_rank": null,
-      "network": "ESPN+",
+      "network": "TBA",
       "spread": "MOST -1.5",
       "note": null
     },
@@ -945,7 +945,7 @@
       "home": "Georgia",
       "away_rank": 18,
       "home_rank": 2,
-      "network": "ABC",
+      "network": "ABC/Disney+",
       "spread": "UGA -15.5",
       "note": null
     },
@@ -1100,7 +1100,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CW",
-      "spread": "TXST -9.5",
+      "spread": "TXST -10",
       "note": null
     },
     {
@@ -1309,7 +1309,7 @@
       "away_rank": 7,
       "home_rank": 14,
       "network": "ABC",
-      "spread": "LSU -3.5",
+      "spread": "LSU -4",
       "note": null
     },
     {
