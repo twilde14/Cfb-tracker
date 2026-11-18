@@ -1,41 +1,8 @@
 {
-  "generated_at": "2026-11-17T21:28:17+00:00Z",
-  "range_start": "2026-11-17",
-  "range_end": "2026-11-23",
+  "generated_at": "2026-11-18T21:02:58+00:00Z",
+  "range_start": "2026-11-18",
+  "range_end": "2026-11-24",
   "games": [
-    {
-      "id": "401866465",
-      "start_utc": "2026-11-17T23:00Z",
-      "away": "E Michigan",
-      "home": "W Michigan",
-      "away_rank": null,
-      "home_rank": null,
-      "network": "ESPN2",
-      "spread": "WMU -15.5",
-      "note": null
-    },
-    {
-      "id": "401866464",
-      "start_utc": "2026-11-18T00:00Z",
-      "away": "Ball State",
-      "home": "Ohio",
-      "away_rank": null,
-      "home_rank": null,
-      "network": "CBSSN",
-      "spread": "OHIO -10",
-      "note": null
-    },
-    {
-      "id": "401866466",
-      "start_utc": "2026-11-18T00:00Z",
-      "away": "Miami OH",
-      "home": "Kent State",
-      "away_rank": null,
-      "home_rank": null,
-      "network": "ESPNU",
-      "spread": "M-OH -9.5",
-      "note": null
-    },
     {
       "id": "401866467",
       "start_utc": "2026-11-19T00:00Z",
@@ -44,7 +11,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "MASS -3",
+      "spread": "MASS -3.5",
       "note": null
     },
     {
@@ -55,7 +22,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "BUF -1.5",
+      "spread": "BUF -2.5",
       "note": null
     },
     {
@@ -110,7 +77,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN",
-      "spread": "DUKE -12.5",
+      "spread": "DUKE -13.5",
       "note": null
     },
     {
@@ -121,7 +88,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPN2",
-      "spread": "TOL -15.5",
+      "spread": "TOL -16.5",
       "note": null
     },
     {
@@ -129,7 +96,7 @@
       "start_utc": "2026-11-21T01:00Z",
       "away": "Oregon",
       "home": "Michigan St",
-      "away_rank": 16,
+      "away_rank": 13,
       "home_rank": null,
       "network": "Fox",
       "spread": "ORE -16.5",
@@ -173,21 +140,10 @@
       "start_utc": "2026-11-21T17:00Z",
       "away": "Wake Forest",
       "home": "Georgia Tech",
-      "away_rank": 13,
+      "away_rank": 11,
       "home_rank": null,
       "network": "ESPN",
       "spread": "WAKE -21",
-      "note": null
-    },
-    {
-      "id": "401856749",
-      "start_utc": "2026-11-21T17:00Z",
-      "away": "Wofford",
-      "home": "Ole Miss",
-      "away_rank": null,
-      "home_rank": 19,
-      "network": "SECN+",
-      "spread": null,
       "note": null
     },
     {
@@ -195,7 +151,7 @@
       "start_utc": "2026-11-21T17:00Z",
       "away": "Ohio State",
       "home": "Nebraska",
-      "away_rank": 20,
+      "away_rank": 14,
       "home_rank": null,
       "network": "Fox",
       "spread": "OSU -3",
@@ -207,9 +163,20 @@
       "away": "Vanderbilt",
       "home": "Florida",
       "away_rank": null,
-      "home_rank": null,
+      "home_rank": 24,
       "network": "SEC Network",
       "spread": "FLA -13.5",
+      "note": null
+    },
+    {
+      "id": "401856749",
+      "start_utc": "2026-11-21T17:00Z",
+      "away": "Wofford",
+      "home": "Ole Miss",
+      "away_rank": null,
+      "home_rank": 25,
+      "network": "SECN+",
+      "spread": null,
       "note": null
     },
     {
@@ -264,7 +231,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "CBSSN",
-      "spread": "ARMY -5.5",
+      "spread": "ARMY -6",
       "note": null
     },
     {
@@ -286,7 +253,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ESPNU",
-      "spread": "UNT -6",
+      "spread": "UNT -6.5",
       "note": null
     },
     {
@@ -459,7 +426,7 @@
       "start_utc": "2026-11-21T18:00Z",
       "away": "Houston",
       "home": "West Virginia",
-      "away_rank": 14,
+      "away_rank": 20,
       "home_rank": null,
       "network": "TNT",
       "spread": "HOU -8.5",
@@ -797,7 +764,7 @@
     },
     {
       "id": "401868117",
-      "start_utc": "2026-11-21T19:05Z",
+      "start_utc": "2026-11-21T19:00Z",
       "away": "Montana",
       "home": "Montana St",
       "away_rank": null,
@@ -966,20 +933,9 @@
       "away": "Arkansas",
       "home": "Texas",
       "away_rank": null,
-      "home_rank": 6,
+      "home_rank": 5,
       "network": "ESPN/Disney+",
       "spread": "TEX -20.5",
-      "note": null
-    },
-    {
-      "id": "401856754",
-      "start_utc": "2026-11-21T20:30Z",
-      "away": "LSU",
-      "home": "Tennessee",
-      "away_rank": 21,
-      "home_rank": 8,
-      "network": "ABC",
-      "spread": "LSU -1.5",
       "note": null
     },
     {
@@ -987,10 +943,21 @@
       "start_utc": "2026-11-21T20:30Z",
       "away": "Indiana",
       "home": "Washington",
-      "away_rank": 9,
+      "away_rank": 8,
       "home_rank": null,
       "network": "Peacock",
       "spread": "IU -7.5",
+      "note": null
+    },
+    {
+      "id": "401856754",
+      "start_utc": "2026-11-21T20:30Z",
+      "away": "LSU",
+      "home": "Tennessee",
+      "away_rank": null,
+      "home_rank": 9,
+      "network": "ABC",
+      "spread": "LSU -1.5",
       "note": null
     },
     {
@@ -1023,7 +990,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "ACC Network",
-      "spread": "FSU -9.5",
+      "spread": "FSU -10.5",
       "note": null
     },
     {
@@ -1076,7 +1043,7 @@
       "away": "Texas A&M",
       "home": "Oklahoma",
       "away_rank": null,
-      "home_rank": null,
+      "home_rank": 22,
       "network": "ESPN2",
       "spread": "OU -7.5",
       "note": null
@@ -1210,7 +1177,7 @@
       "away_rank": null,
       "home_rank": null,
       "network": "USA Net",
-      "spread": "TXST -10.5",
+      "spread": "TXST -11.5",
       "note": null
     },
     {
@@ -1251,7 +1218,7 @@
       "start_utc": "2026-11-22T00:00Z",
       "away": "Arizona",
       "home": "Kansas St",
-      "away_rank": 23,
+      "away_rank": 19,
       "home_rank": null,
       "network": "FS1",
       "spread": "ARIZ -7",
@@ -1296,7 +1263,7 @@
       "away": "Georgia",
       "home": "South Carolina",
       "away_rank": 1,
-      "home_rank": 17,
+      "home_rank": 21,
       "network": "ABC",
       "spread": "UGA -16.5",
       "note": null
@@ -1307,7 +1274,7 @@
       "away": "SMU",
       "home": "Notre Dame",
       "away_rank": null,
-      "home_rank": 5,
+      "home_rank": 6,
       "network": "NBC",
       "spread": "ND -20.5",
       "note": null
@@ -1317,8 +1284,8 @@
       "start_utc": "2026-11-22T00:30Z",
       "away": "Kentucky",
       "home": "Missouri",
-      "away_rank": 11,
-      "home_rank": 22,
+      "away_rank": 16,
+      "home_rank": null,
       "network": "SEC Network",
       "spread": "MIZ -5.5",
       "note": null
@@ -1329,7 +1296,7 @@
       "away": "Pitt",
       "home": "Louisville",
       "away_rank": null,
-      "home_rank": null,
+      "home_rank": 23,
       "network": "ESPN2",
       "spread": "LOU -14",
       "note": null
@@ -1395,9 +1362,9 @@
       "away": "San Diego St",
       "home": "Boise St",
       "away_rank": null,
-      "home_rank": 24,
+      "home_rank": 17,
       "network": "USA Net",
-      "spread": "BOIS -16.5",
+      "spread": "BOIS -17.5",
       "note": null
     },
     {
@@ -1405,7 +1372,7 @@
       "start_utc": "2026-11-22T03:15Z",
       "away": "Oklahoma St",
       "home": "Arizona St",
-      "away_rank": 25,
+      "away_rank": null,
       "home_rank": null,
       "network": "ESPN",
       "spread": "OKST -3",
@@ -1430,7 +1397,29 @@
       "away_rank": null,
       "home_rank": null,
       "network": "FS1",
-      "spread": "NEV -4",
+      "spread": "NEV -4.5",
+      "note": null
+    },
+    {
+      "id": "401866470",
+      "start_utc": "2026-11-25T00:00Z",
+      "away": "Kent State",
+      "home": "E Michigan",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "ESPN+",
+      "spread": null,
+      "note": null
+    },
+    {
+      "id": "401866471",
+      "start_utc": "2026-11-25T00:00Z",
+      "away": "Miami OH",
+      "home": "W Michigan",
+      "away_rank": null,
+      "home_rank": null,
+      "network": "ESPN2",
+      "spread": null,
       "note": null
     }
   ]
